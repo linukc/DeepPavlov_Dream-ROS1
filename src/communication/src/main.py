@@ -21,6 +21,11 @@ def request():
 
     if '#+#' in answer and not "track_object" in answer:
         answer = answer.split('#+#')[0].strip()
+
+        if "turn" in answer:
+            command, direction = answer.split("_")
+            answer = command + "_360_" + direction
+
         print(answer)
         pub.publish(answer)
         time.sleep(1)
