@@ -25,6 +25,8 @@ def request():
         if "turn" in answer:
             command, direction = answer.split("_")
             answer = command + "_360_" + direction
+        if "move" in answer:
+            answer = answer[5:]
 
         print(answer)
         pub.publish(answer)
