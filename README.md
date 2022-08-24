@@ -24,3 +24,16 @@
 - `python3 src/communication/src/main.py <любое количество текста>`
 
 Переданные аргументы будут сформированы в предложение и отправлены Dream на обработку. В случае распознавания комманды, выполнится одна из команд перемещения.
+Существующий список команд перемещения:
+turn_90_clockwise
+turn_180_clockwise
+turn_270_clockwise
+turn_360_clockwise
+turn_90_counterclockwise
+turn_180_counterclockwise
+turn_270_counterclockwise
+turn_360_counterclockwise
+forward_1
+forward_2
+backward_2
+backward_2
